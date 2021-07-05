@@ -1,7 +1,9 @@
 let userName = '';
-let userQuestion = 'enter question here';
+let userQuestion = document.getElementsByClassName('user-question');
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
+
+console.log(userQuestion);
 
 userName ? console.log(`Hello ${userName}`) 
 : console.log(`Hello`)
