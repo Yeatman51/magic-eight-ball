@@ -1,9 +1,10 @@
 let userName = '';
 let userQuestion = document.getElementsByClassName('user-question');
+
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = '';
 
-console.log(userQuestion);
+console.log(userQuestion.value);
 
 userName ? console.log(`Hello ${userName}`) 
 : console.log(`Hello`)
@@ -35,5 +36,7 @@ switch (randomNumber) {
   default :
     eightBall = 'Signs point to yes';
 }
+
+document.getElementById("eight-ball").innerHTML = eightBall;
 
 console.log(`The eight ball answered: ${eightBall}`);
